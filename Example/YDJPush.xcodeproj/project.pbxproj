@@ -37,8 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		150F08B828C0C2E100309053 /* ReplaceMe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
+		150F08BB28C0C31A00309053 /* YDJPushConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDJPushConfig.h; sourceTree = "<group>"; };
+		150F08BC28C0C31A00309053 /* YDJPushConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDJPushConfig.m; sourceTree = "<group>"; };
 		36F1E133051D008346D5FA94 /* Pods-YDJPush_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDJPush_Example.debug.xcconfig"; path = "Target Support Files/Pods-YDJPush_Example/Pods-YDJPush_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		59CC5FB118814DB5BF1AD4AD /* YDJPush.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YDJPush.podspec; path = ../YDJPush.podspec; sourceTree = "<group>"; };
+		59CC5FB118814DB5BF1AD4AD /* YDJPush.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YDJPush.podspec; path = ../YDJPush.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* YDJPush_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YDJPush_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,10 +63,10 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		67764ADDC8FAD7D3D9712FA7 /* Pods-YDJPush_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDJPush_Example.release.xcconfig"; path = "Target Support Files/Pods-YDJPush_Example/Pods-YDJPush_Example.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7305E75129F7FD3548B894EC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7305E75129F7FD3548B894EC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7F1B7373415CD01C7A1151B /* Pods-YDJPush_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDJPush_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YDJPush_Tests/Pods-YDJPush_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D2352244E25EE3D1B4BF60E4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D2352244E25EE3D1B4BF60E4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D8757188780714CB0BF5D5AD /* Pods_YDJPush_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YDJPush_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6809F09433267A709E4A43C /* Pods-YDJPush_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDJPush_Tests.release.xcconfig"; path = "Target Support Files/Pods-YDJPush_Tests/Pods-YDJPush_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EB5CC984F038B8203ABDE288 /* Pods_YDJPush_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YDJPush_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,9 +98,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		150F08B528C0C2E100309053 /* YDJPush */ = {
+			isa = PBXGroup;
+			children = (
+				150F08B628C0C2E100309053 /* Classes */,
+				150F08B928C0C2E100309053 /* Assets */,
+			);
+			name = YDJPush;
+			path = ../YDJPush;
+			sourceTree = "<group>";
+		};
+		150F08B628C0C2E100309053 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				150F08B828C0C2E100309053 /* ReplaceMe.m */,
+				150F08BB28C0C31A00309053 /* YDJPushConfig.h */,
+				150F08BC28C0C31A00309053 /* YDJPushConfig.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		150F08B928C0C2E100309053 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				150F08B528C0C2E100309053 /* YDJPush */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for YDJPush */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -193,7 +224,6 @@
 				A7F1B7373415CD01C7A1151B /* Pods-YDJPush_Tests.debug.xcconfig */,
 				E6809F09433267A709E4A43C /* Pods-YDJPush_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +238,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				91F424A99FB5C40AF21D98B4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +288,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -334,24 +364,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YDJPush_Tests/Pods-YDJPush_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		91F424A99FB5C40AF21D98B4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YDJPush_Example/Pods-YDJPush_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/YDJPush/YDJPush.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YDJPush.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YDJPush_Example/Pods-YDJPush_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		95B8AD61547C60966079024C /* [CP] Check Pods Manifest.lock */ = {
